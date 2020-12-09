@@ -1,5 +1,11 @@
 ## Getting Started
 
+To install all modules listed in both dependencies and devDependencie, run:
+
+```bash
+npm install
+```
+
 To execute `index.js` file directly using cli, run:
 
 ```bash
