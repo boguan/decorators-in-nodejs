@@ -1,6 +1,6 @@
 ## Getting Started
 
-To install all modules listed in both dependencies and devDependencie, run:
+At first, install all modules listed in both dependencies and devDependencie, run:
 
 ```bash
 npm install
@@ -12,7 +12,7 @@ To execute `index.js` file directly using cli, run:
 npm run index
 ```
 
-To execute `index.js` file using cli after compiling , run:
+Or you can execute `index.js` file using cli after compiling , run:
 
 ```bash
 npm run build && node ./output/index-compiled.js
