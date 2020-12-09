@@ -3,12 +3,14 @@ function readOnly(target, name, descriptor) {
   return descriptor;
 }
 
-function testable(target) {
-  target.isTestable = true;
+function isTestable(value) {
+  return function decorator(target) {
+     target.isTestable = value;
+  }
 }
 
-@testable
-export class MyTestableClass {
+@isTestable(true)
+export class MyClass {
   name = 'Li';
 
   @readOnly
@@ -18,5 +20,5 @@ export class MyTestableClass {
 }
 
 
-const t = new MyTestableClass;
-console.log(MyTestableClass.isTestable); // true
+const t = new MyClass;
+console.log(MyClass.isTestable); // true
